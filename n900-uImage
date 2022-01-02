@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+version=$1
+img_path=$2
+
+cat boot/vmlinuz-$version /usr/lib/linux-image-omap/omap3-n900.dtb > /tmp/zImage_dtb
+mkimage -A arm -O linux -T kernel -C none -a 80008000 -e 80008000 -d /tmp/zImage_dtb /boot/uImage
+rm /tmp/zImage_dtb

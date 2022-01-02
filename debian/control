@@ -1,0 +1,13 @@
+Source: maemo-kernel-config
+Section: misc
+Priority: optional
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.3.0
+
+Package: maemo-kernel-config-n900
+Architecture: any
+Priority: optional
+Depends:
+ u-boot-tools
+Description: Post install scripts to create uImage with dtb
