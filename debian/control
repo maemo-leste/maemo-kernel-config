@@ -8,6 +8,15 @@ Standards-Version: 4.3.0
 Package: maemo-kernel-config-n900
 Architecture: any
 Priority: optional
+Provides: maemo-kernel-config
+Conflicts: maemo-kernel-config-mapphone
 Depends:
  u-boot-tools
 Description: Post install scripts to create uImage with dtb
+
+Package: maemo-kernel-config-mapphone
+Architecture: any
+Priority: optional
+Provides: maemo-kernel-config
+Conflicts: maemo-kernel-config-n900
+Description: Stub package (currently doesn't nothing)
